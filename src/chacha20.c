@@ -163,7 +163,7 @@ static int chacha20_core(stream_state *state, uint32_t h[16])
 
     memcpy(h, state->h, sizeof state->h);
 
-    for (i=0; i<52; i++) {
+    for (i=0; i<170; i++) {
         /** Column round **/
         QR(h[0], h[4], h[ 8], h[12]);
         QR(h[1], h[5], h[ 9], h[13]);
